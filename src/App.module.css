@@ -1,0 +1,53 @@
+.gameBody {
+	background: url(./media/image/app_wall.jpg);
+	background-size: contain;
+	height: 56.25vw;
+}
+.appBox {
+	position: relative;
+	overflow: hidden;
+	background: url(./media/image/app_wall.jpg);
+	background-size: contain;
+	height: 56.25vw;
+}
+.gameWelcome {
+	position: relative;
+	overflow: hidden;
+}
+.startOverlay {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	background: black;
+	transition: 1s;
+	top: 0;
+	left: 0;
+	z-index: 999999;
+    opacity: 1;
+    display: block;
+}
+.displayNone {
+    display: none;
+}
+.opacityAnimation {
+	animation-name: gozero;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+@keyframes gozero {
+	0% {
+        opacity: 1;
+        display: block;
+	}
+	50% {
+        opacity: 1;
+        display: block;
+	}
+	99% {
+        opacity: 0;
+        display: block;
+    }
+    100% {
+        display: none;
+    }
+}

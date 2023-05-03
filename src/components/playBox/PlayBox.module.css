@@ -1,0 +1,175 @@
+.playBox {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	z-index: 99;
+}
+.signsListBtn {
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translate(-50%, 0);
+	box-shadow: 0px 1px 1vw 0px black;
+	background: white;
+	border-radius: 4px 4px 0 0;
+	display: inline-block;
+	cursor: pointer;
+	color: black;
+	font-size: 1.9vw;
+	font-weight: 600;
+	padding: 0.3vw 2vw;
+	line-height: 1.2;
+	text-decoration: none;
+	text-align: center;
+	transition: 0.2s;
+}
+.btnRedText {
+	color: red;
+	font-size: 1.7vw;
+}
+.signsListBtn:hover {
+	background: white;
+	box-shadow: 0px 0px 1.5vw white;
+}
+.signOrNoWrapper {
+	position: absolute;
+	top: 100%;
+	left: 2%;
+	background: rgba(49, 49, 49, 0.7);
+	padding: 1.2vw 1.6vw;
+	border-radius: 1vw 1vw 0 0;
+	box-shadow: 0 0 2vw rgba(255, 255, 255, 0.116);
+	width: 30vw;
+	-webkit-animation: slide-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+	animation: slide-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+.signOrNoHeading {
+	color: white;
+	font-size: 2.5vw;
+}
+.signOrNoGuide {
+	font-weight: 400;
+	color: white;
+	font-size: 1.36vw;
+	line-height: 1.3;
+	margin-bottom: 2.5vw;
+}
+.signOrNoGuide span {
+	color: red;
+}
+.arrowUp {
+	position: absolute;
+	bottom: 79%;
+	left: 65%;
+    width: 17vw;
+    transform: scale(0);
+	-webkit-animation: scale-up-center 0.2s cubic-bezier(0.39, 0.575, 0.565, 1)
+    0.4s forwards;
+	animation: scale-up-center 0.2s cubic-bezier(0.39, 0.575, 0.565, 1) 0.4s
+    forwards;
+}
+.arrowDown {
+    position: absolute;
+	bottom: 29%;
+	left: 91%;
+	width: 21vw;
+    transform: scale(0);
+	-webkit-animation: scale-up-center 0.2s cubic-bezier(0.39, 0.575, 0.565, 1)
+    0.4s forwards;
+	animation: scale-up-center 0.2s cubic-bezier(0.39, 0.575, 0.565, 1) 0.4s
+    forwards;
+}
+@-webkit-keyframes slide-top {
+	0% {
+		-webkit-transform: translateY(0);
+		transform: translateY(0);
+	}
+	100% {
+		-webkit-transform: translateY(-100%);
+		transform: translateY(-100%);
+	}
+}
+@keyframes slide-top {
+	0% {
+		-webkit-transform: translateY(0);
+		transform: translateY(0);
+	}
+	100% {
+		-webkit-transform: translateY(-100%);
+		transform: translateY(-100%);
+	}
+}
+@-webkit-keyframes scale-up-center {
+	0% {
+		-webkit-transform: scale(0);
+		transform: scale(0);
+	}
+	100% {
+		-webkit-transform: scale(1);
+		transform: scale(1);
+	}
+}
+@keyframes scale-up-center {
+	0% {
+		-webkit-transform: scale(0);
+		transform: scale(0);
+	}
+	100% {
+		-webkit-transform: scale(1);
+		transform: scale(1);
+	}
+}
+
+.signOrBtn {
+	padding: 1.2vw;
+	font-size: 1.6vw;
+	color: white;
+	border-radius: 1vw;
+	background: rgba(97, 97, 97, 0.473);
+	background: linear-gradient(
+		0deg,
+		rgba(60, 60, 60, 0.6194852941176471) 0%,
+		rgba(92, 92, 92, 0.6699054621848739) 43%,
+		rgba(138, 138, 138, 0.47942927170868344) 100%
+	);
+	margin: 0.6vw 0;
+	cursor: pointer;
+}
+.signOrBtn:hover {
+	background: rgba(97, 97, 97, 0.568);
+	background: linear-gradient(
+		0deg,
+		rgba(60, 60, 60, 0.6895133053221288) 0%,
+		rgba(92, 92, 92, 0.7259278711484594) 43%,
+		rgba(138, 138, 138, 0.6222864145658263) 100%
+	);
+}
+.muteBtn, .fscrBtn {
+    position: absolute;
+	box-shadow:inset 0px 1px 0px 0px #ffffff;
+	background:linear-gradient(to bottom, #f9f9f9 5%, #e9e9e9 100%);
+	background-color:#f9f9f9;
+	border-radius:3px;
+	border:1px solid #dcdcdc;
+	display:inline-block;
+	cursor:pointer;
+	color:#2b2b2b;
+    font-size:1vw;
+    font-weight: 500;
+	padding: 0.3vw 1.5vw;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ffffff;
+}
+.muteBtn:hover {
+	background:linear-gradient(to bottom, #e9e9e9 5%, #f9f9f9 100%);
+	background-color:#e9e9e9;
+}
+.muteBtn {
+    bottom: 1%;
+    right: 10vw;
+}
+.fscrBtn {
+    bottom: 1%;
+    right: 1vw;
+}

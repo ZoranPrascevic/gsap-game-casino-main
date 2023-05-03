@@ -1,0 +1,9 @@
+video {
+    width: 100%;
+    display: block;
+}
+.videoWrapper {
+    position: absolute;
+    width: 100%;
+    z-index: 9 !important;
+}
